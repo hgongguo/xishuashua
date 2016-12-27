@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>嘻唰唰 | xishua</title>
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="static/css/reset.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wapper">
+    <p class="mask"></p>
+    <p class="mask_1"></p>
+    <p class="mask_2"></p>
+    <p class="mask_3"></p>
+    <a href="javascript:;" class="weixin"></a>
+    <!--<a href="tencent://message/?uin=1589498228" target="_blank" class="weibo"></a>-->
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=1589498228&site=qq&menu=yes" target="_blank" class="weibo"></a>
+    <div class="code"><img src="http://7xj243.com2.z0.glb.qiniucdn.com/ad/images/code.jpg">
+        <p>扫描二维码</p>
+        <p>下载ios版百搭屋</p>
+        <p><a href="https://itunes.apple.com/cn/app/bai-da-wu/id1057877711?l=en&mt=8">点击跳转至 App Store</a></p>
+    </div>
+	<div class="wxCodeParent">
+		<div class="wxCode">
+		<br><br><br><br>
+		<img src="http://thumbnail0.baidupcs.com/thumbnail/c911c2e7bdf8f03f18e21b4818105a16?fid=3943361929-250528-890557001355383&time=1482760800&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-tHkFusalWlpIkFcy7t%2F7bB5d4e8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8370855653318782848&dp-callid=0&size=c710_u400&quality=100">
+		<img style="margin-left: 65px;" src="http://thumbnail0.baidupcs.com/thumbnail/17ef6fa01a0a6f6d75f6537e7aa61cea?fid=3943361929-250528-673336703380100&time=1482760800&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-bNSW38uRDw5ypF0Z%2FlLCGYu7fqw%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=8370877118521218717&dp-callid=0&size=c710_u400&quality=100">
+			<br><br><p style="font-size:18px;">抓紧——扫描二维码</p><br>
+			<p style="font-size:18px;">联系我们吧!!</p>
+		</div>
+	</div>
+    <div class="logoShow">
+        <p>名称：映享信息科技(上海)有限责任公司</p>
+        <p>电话: 400-1019-822</p>
+        <p>地址: 上海徐汇区文定路258弄文定生活广场B117-2</p>
+        <p>百搭屋隶属于映享信息科技(上海)有限责任公司，是互联网时代的产物，一个基于内容让个人设计师和个人用户产生交互的平台。
+            我们的初衷是：变革现有的家居软装商业模式，把社交融入进来，借由互联网的便捷，让用户和设计师可以实时的互动，用户可以
+            方便的接受到：生活、美、家、设计相关的信息。</p>
+    </div>
+    <div class="box">
+		<p class="t1">还在为疯狂找朋友<span style="font-size: 30px;color:#FFFF00">投票</span>而烦恼？？？</p>
+		<p class="t1">投入<img src="http://4.pic.paopaoche.net/up/2016-7/201676144816.png" style="width:60px;vertical-align:middle;" width="30px">却不见回报</p>
+        <p class="logo">
+			<img src="http://img.laozongyi.com/portal/201611/01/171711ruitfo0atsgrpiqp.jpg" style="width:300px" >
+			<!--<img src="359b033b5bb5c9ea8b8c8707dd39b6003bf3b3d3.jpg">-->
+		</p>
+		
+        <p class="t1" style="margin-top:50px;">"嘻唰唰"最屌的万人<span style="font-size: 30px;color:#FFFF00">投票</span>分享平台</p>
+		<p class="t1">更专业、更高效、更诚信</p>
+        <!--<p class="btn">APP下载</p>
+        <p class="center white mt30 font16 com">公司介绍</p>-->
+    </div>
+
+</div>
+<div class="cont">
+    <video autoplay loop>
+        <!--<source src="http://7xj243.com2.z0.glb.qiniucdn.com/ad/video/bg.mp4" type="video/mp4">-->
+        <source src="bg.mov" type="video/mp4">
+    </video>
+</div>
+
+<script src="static/js/jquery.min.js"></script>
+<script type="text/javascript">
+    $('.btn').on('click', function () {
+        $(this).css('z-index', '1');
+        $('.mask_1').fadeToggle(300);
+        $('.wxCode').hide()
+        $('.code').animate({opacity: '1', top: '54%'}, 300)
+    });
+    $('.mask_1').on('click', function () {
+        $('.btn').css('z-index', '12');
+        $(this).fadeToggle(300);
+        $('.wxCode').show()
+        $('.code').animate({opacity: '0', top: '60%'}, 300)
+    });
+    $('.weixin').on('click', function () {
+        $('.btn').css('z-index', '1');
+        $('.mask_2').fadeToggle(300);
+        $('.wxCode').animate({opacity: '1', top: '15%'}, 300)
+    });
+    $('.mask_2').on('click', function () {
+        //$('.btn').css('z-index', '12');
+        $(this).fadeToggle(300);
+        $('.wxCode').animate({opacity: '0', top: '100%'}, 300)
+    });
+    /*$('.logo,.com').on('click',function(){
+        $('.btn,.com').css('z-index', '1');
+        $('.mask_3').fadeToggle(300);
+        $('.logoShow').animate({opacity: '1', top: '54%'}, 300)
+    });
+    $('.mask_3').on('click',function(){
+        $('.btn,.com').css('z-index', '12');
+        $(this).fadeToggle(300);
+        $('.logoShow').animate({opacity: '0', top: '60%'}, 300)
+    });*/
+</script>
+</body>
+</html>
